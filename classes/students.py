@@ -8,7 +8,7 @@ class Student(Person):
         self.school_id= school_id
 
     @classmethod
-    def all_students(cls):
+    def all_members(cls):
         students = []
         with open('./data/students.csv', newline = '') as csvfile:
             reader = csv.DictReader(csvfile)

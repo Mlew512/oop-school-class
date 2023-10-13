@@ -8,7 +8,7 @@ class Staff(Person):
         self.employee_id = employee_id
     
     @classmethod
-    def all_staff(cls):
+    def all_members(cls):
         staff = []
         with open('./data/staff.csv', newline = '') as csvfile:
             reader = csv.DictReader(csvfile)
